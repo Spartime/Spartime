@@ -28,6 +28,9 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      SOCIAL_KAKAO_REDIRECT_URL: ${SOCIAL_KAKAO_REDIRECT_URL}
+      SOCIAL_KAKAO_CLIENT_ID: ${SOCIAL_KAKAO_CLIENT_ID}
+      SSL_KEY: ${SSL_KEY}
       TZ: Asia/Seoul
     networks:
     - my-network

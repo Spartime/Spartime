@@ -1,9 +1,7 @@
 version: "3.8"
 services:
   app:
-    build:
-      context: .
-      dockerfile: DockerFile
+    image: apfhd0257/spartime:latest
     ports:
       - "8080:8080"
     depends_on:
@@ -14,6 +12,8 @@ services:
       MYSQL_USER: ${MYSQL_USER}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD}
       JWT_SECRET_KEY: ${JWT_SECRET_KEY}
+      SOCIAL_KAKAO_REDIRECT_URL: ${SOCIAL_KAKAO_REDIRECT_URL}
+      SOCIAL_KAKAO_CLIENT_ID: ${SOCIAL_KAKAO_CLIENT_ID}
       TZ: Asia/Seoul
     networks:
       - my-network
